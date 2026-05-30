@@ -4,6 +4,8 @@ const cors = require('cors')
 const connectDB = require('./config/db')
 const router = require('./routes/RotasBanco')
 
+require('dotenv').config() 
+
 const app = express()
 
 app.use(cors())

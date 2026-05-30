@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
-function connectDB(){
+async function connectDB() {
     try {
-        mongoose.connect(process.env.MONGO_URI)
+        await mongoose.connect(process.env.MONGO_URI)
         console.log("Banco mongodb conectado!")
-    } catch(erro) {
-        console.log("erro ao si conectar no banco!")
+    } catch (erro) {
+        console.log("Erro ao se conectar no banco!")
         console.log(erro)
     }
 }
