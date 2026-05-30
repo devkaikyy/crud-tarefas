@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 function connectDB(){
     try {
-        mongoose.connect('mongodb://127.0.0.1:27017/banco02')
+        mongoose.connect(process.env.MONGO_URI)
         console.log("Banco mongodb conectado!")
     } catch(erro) {
         console.log("erro ao si conectar no banco!")
