@@ -1,4 +1,4 @@
-const URL_API = 'http://localhost:3000'
+const URL_API = 'https://crud-tarefas-dbmw.onrender.com'
 
 export async function BancoGet(){
    const response = await fetch(`${URL_API}/tarefas`)
