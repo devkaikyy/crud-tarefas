@@ -17,4 +17,4 @@ const Banc2Schema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model("Banco2", Banc2Schema)
+module.exports = mongoose.model("Banco2", Banc2Schema,)

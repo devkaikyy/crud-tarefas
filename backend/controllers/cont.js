@@ -12,6 +12,7 @@ exports.BancoGet = async (req, res) => {
 }
 
 exports.BancoPost = async (req, res) => {
+
     try {
         const dados = await Banco.create({
             nome: req.body.nome,
