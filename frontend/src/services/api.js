@@ -1,4 +1,4 @@
-const URL_API = 'https://crud-tarefas-4y7u.onrender.com'
+const URL_API = import.meta.env.VITE_API_URL
 
 export async function BancoGet(){
    const response = await fetch(`${URL_API}/tarefas`)
